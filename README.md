@@ -21,8 +21,31 @@ Cada nivel es más peligroso que el anterior y cuenta con:
 6. Mutación gigante con salto y embestida.
 7. Jefe con múltiples fases y drop exclusivo.
 
+### Parásitos infectores por mob (7 niveles)
+Se añadieron variantes parásitas por tipo de mob (cada una con 7 niveles):
+- Vaca, Cerdo, Oveja, Gallina
+- Aldeano
+- Zombi, Esqueleto, Creeper, Enderman, Araña, Bruja
+- Guardián (Warden) y Wither
+
+> Identificadores: `addon:parasite_<mob>_lvl1..lvl7` (ej: `addon:parasite_cow_lvl4`).
+
 ### Flor parasitaria (nido)
 Se añade una entidad **Flor parasitaria** (`addon:parasite_bloom`) que genera parásitos de nivel 1 de forma periódica. Puede usarse como nido o fuente de infección ambiental.
+
+### Flores parasitarias por nivel (1–7)
+Se añaden 7 flores (`addon:parasite_bloom_lvl1..lvl7`). Cada nivel puede invocar:
+- Parásitos base del mismo nivel (`addon:parasite_lvlN`).
+- Parásitos infectores por mob del mismo nivel.
+
+### Fases mundiales por días (1–7)
+Se añadieron controladores de fase mundial (`addon:world_phase_controller_lvl1..lvl7`) que evolucionan automáticamente **cada 10 días** (240000 ticks). No reemplaza los spawns vanilla, pero sirve como “estado global” para comandos o sistemas externos:
+- Fase 1: días 1–10
+- Fase 2: días 10–20
+- ...
+- Fase 7: días 60–70
+
+Para activar el sistema: `/summon addon:world_phase_controller_lvl1`.
 
 ### Evolución
 Las entidades usan:
@@ -107,6 +130,104 @@ resource_pack/textures/entity/parasite_lvl5.png
 resource_pack/textures/entity/parasite_lvl6.png
 resource_pack/textures/entity/parasite_lvl7.png
 resource_pack/textures/entity/parasite_bloom.png
+resource_pack/textures/entity/parasite_bloom_lvl1.png
+resource_pack/textures/entity/parasite_bloom_lvl2.png
+resource_pack/textures/entity/parasite_bloom_lvl3.png
+resource_pack/textures/entity/parasite_bloom_lvl4.png
+resource_pack/textures/entity/parasite_bloom_lvl5.png
+resource_pack/textures/entity/parasite_bloom_lvl6.png
+resource_pack/textures/entity/parasite_bloom_lvl7.png
+resource_pack/textures/entity/parasite_cow_lvl1.png
+resource_pack/textures/entity/parasite_cow_lvl2.png
+resource_pack/textures/entity/parasite_cow_lvl3.png
+resource_pack/textures/entity/parasite_cow_lvl4.png
+resource_pack/textures/entity/parasite_cow_lvl5.png
+resource_pack/textures/entity/parasite_cow_lvl6.png
+resource_pack/textures/entity/parasite_cow_lvl7.png
+resource_pack/textures/entity/parasite_pig_lvl1.png
+resource_pack/textures/entity/parasite_pig_lvl2.png
+resource_pack/textures/entity/parasite_pig_lvl3.png
+resource_pack/textures/entity/parasite_pig_lvl4.png
+resource_pack/textures/entity/parasite_pig_lvl5.png
+resource_pack/textures/entity/parasite_pig_lvl6.png
+resource_pack/textures/entity/parasite_pig_lvl7.png
+resource_pack/textures/entity/parasite_sheep_lvl1.png
+resource_pack/textures/entity/parasite_sheep_lvl2.png
+resource_pack/textures/entity/parasite_sheep_lvl3.png
+resource_pack/textures/entity/parasite_sheep_lvl4.png
+resource_pack/textures/entity/parasite_sheep_lvl5.png
+resource_pack/textures/entity/parasite_sheep_lvl6.png
+resource_pack/textures/entity/parasite_sheep_lvl7.png
+resource_pack/textures/entity/parasite_chicken_lvl1.png
+resource_pack/textures/entity/parasite_chicken_lvl2.png
+resource_pack/textures/entity/parasite_chicken_lvl3.png
+resource_pack/textures/entity/parasite_chicken_lvl4.png
+resource_pack/textures/entity/parasite_chicken_lvl5.png
+resource_pack/textures/entity/parasite_chicken_lvl6.png
+resource_pack/textures/entity/parasite_chicken_lvl7.png
+resource_pack/textures/entity/parasite_villager_lvl1.png
+resource_pack/textures/entity/parasite_villager_lvl2.png
+resource_pack/textures/entity/parasite_villager_lvl3.png
+resource_pack/textures/entity/parasite_villager_lvl4.png
+resource_pack/textures/entity/parasite_villager_lvl5.png
+resource_pack/textures/entity/parasite_villager_lvl6.png
+resource_pack/textures/entity/parasite_villager_lvl7.png
+resource_pack/textures/entity/parasite_zombie_lvl1.png
+resource_pack/textures/entity/parasite_zombie_lvl2.png
+resource_pack/textures/entity/parasite_zombie_lvl3.png
+resource_pack/textures/entity/parasite_zombie_lvl4.png
+resource_pack/textures/entity/parasite_zombie_lvl5.png
+resource_pack/textures/entity/parasite_zombie_lvl6.png
+resource_pack/textures/entity/parasite_zombie_lvl7.png
+resource_pack/textures/entity/parasite_skeleton_lvl1.png
+resource_pack/textures/entity/parasite_skeleton_lvl2.png
+resource_pack/textures/entity/parasite_skeleton_lvl3.png
+resource_pack/textures/entity/parasite_skeleton_lvl4.png
+resource_pack/textures/entity/parasite_skeleton_lvl5.png
+resource_pack/textures/entity/parasite_skeleton_lvl6.png
+resource_pack/textures/entity/parasite_skeleton_lvl7.png
+resource_pack/textures/entity/parasite_creeper_lvl1.png
+resource_pack/textures/entity/parasite_creeper_lvl2.png
+resource_pack/textures/entity/parasite_creeper_lvl3.png
+resource_pack/textures/entity/parasite_creeper_lvl4.png
+resource_pack/textures/entity/parasite_creeper_lvl5.png
+resource_pack/textures/entity/parasite_creeper_lvl6.png
+resource_pack/textures/entity/parasite_creeper_lvl7.png
+resource_pack/textures/entity/parasite_enderman_lvl1.png
+resource_pack/textures/entity/parasite_enderman_lvl2.png
+resource_pack/textures/entity/parasite_enderman_lvl3.png
+resource_pack/textures/entity/parasite_enderman_lvl4.png
+resource_pack/textures/entity/parasite_enderman_lvl5.png
+resource_pack/textures/entity/parasite_enderman_lvl6.png
+resource_pack/textures/entity/parasite_enderman_lvl7.png
+resource_pack/textures/entity/parasite_spider_lvl1.png
+resource_pack/textures/entity/parasite_spider_lvl2.png
+resource_pack/textures/entity/parasite_spider_lvl3.png
+resource_pack/textures/entity/parasite_spider_lvl4.png
+resource_pack/textures/entity/parasite_spider_lvl5.png
+resource_pack/textures/entity/parasite_spider_lvl6.png
+resource_pack/textures/entity/parasite_spider_lvl7.png
+resource_pack/textures/entity/parasite_witch_lvl1.png
+resource_pack/textures/entity/parasite_witch_lvl2.png
+resource_pack/textures/entity/parasite_witch_lvl3.png
+resource_pack/textures/entity/parasite_witch_lvl4.png
+resource_pack/textures/entity/parasite_witch_lvl5.png
+resource_pack/textures/entity/parasite_witch_lvl6.png
+resource_pack/textures/entity/parasite_witch_lvl7.png
+resource_pack/textures/entity/parasite_warden_lvl1.png
+resource_pack/textures/entity/parasite_warden_lvl2.png
+resource_pack/textures/entity/parasite_warden_lvl3.png
+resource_pack/textures/entity/parasite_warden_lvl4.png
+resource_pack/textures/entity/parasite_warden_lvl5.png
+resource_pack/textures/entity/parasite_warden_lvl6.png
+resource_pack/textures/entity/parasite_warden_lvl7.png
+resource_pack/textures/entity/parasite_wither_lvl1.png
+resource_pack/textures/entity/parasite_wither_lvl2.png
+resource_pack/textures/entity/parasite_wither_lvl3.png
+resource_pack/textures/entity/parasite_wither_lvl4.png
+resource_pack/textures/entity/parasite_wither_lvl5.png
+resource_pack/textures/entity/parasite_wither_lvl6.png
+resource_pack/textures/entity/parasite_wither_lvl7.png
 resource_pack/textures/items/antibiotic_sword.png
 resource_pack/textures/items/corrosive_bow.png
 resource_pack/textures/items/bio_spear.png
@@ -218,6 +339,7 @@ resource_pack/sounds/parasite_evolve.ogg
    - Android: `games/com.mojang/development_*_packs`
 2. Activa ambos packs desde el menú de **Add-Ons** en tu mundo.
 3. Genera parásitos con `/summon addon:parasite_lvl1` o invoca la flor con `/summon addon:parasite_bloom`.
+4. (Opcional) Activa fases con `/summon addon:world_phase_controller_lvl1`.
 
 ## 🧪 Ajustes recomendados
 - Ajusta valores de daño/vida en `behavior_pack/entities/parasite_lvl*.json` según tu dificultad.

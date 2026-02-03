@@ -1,0 +1,20 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "addon:parasite_enderman_lvl4",
+      "materials": {
+        "default": "entity"
+      },
+      "textures": {
+        "default": "textures/entity/parasite_enderman_lvl4"
+      },
+      "geometry": {
+        "default": "geometry.parasite_lvl4"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}
