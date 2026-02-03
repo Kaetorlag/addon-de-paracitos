@@ -1,0 +1,22 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "addon:book_radio_02",
+      "category": "Items"
+    },
+    "components": {
+      "minecraft:foil": true,
+      "minecraft:stacked_by_data": true,
+      "minecraft:max_stack_size": 1,
+      "minecraft:tag": {
+        "tags": [
+          "radio_enchant_02"
+        ]
+      },
+      "minecraft:icon": {
+        "texture": "book_radio_02"
+      }
+    }
+  }
+}

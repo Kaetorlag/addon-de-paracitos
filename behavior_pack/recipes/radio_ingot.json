@@ -1,0 +1,17 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "addon:radio_ingot"
+    },
+    "ingredients": [
+      {
+        "item": "addon:radio_ore"
+      }
+    ],
+    "result": {
+      "item": "addon:radio_ingot",
+      "count": 1
+    }
+  }
+}

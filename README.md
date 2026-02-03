@@ -21,6 +21,9 @@ Cada nivel es más peligroso que el anterior y cuenta con:
 6. Mutación gigante con salto y embestida.
 7. Jefe con múltiples fases y drop exclusivo.
 
+### Flor parasitaria (nido)
+Se añade una entidad **Flor parasitaria** (`addon:parasite_bloom`) que genera parásitos de nivel 1 de forma periódica. Puede usarse como nido o fuente de infección ambiental.
+
 ### Evolución
 Las entidades usan:
 - `component_groups` + `events` para transformación.
@@ -31,12 +34,14 @@ Las entidades usan:
 - **Espada antibiótica**: daño extra vs parásitos.
 - **Arco corrosivo**: proyectil con veneno.
 - **Lanza biológica**: daño alto y penetrante.
+- **25 armas radioactivas** (`radio_weapon_01..25`).
 
 ### Armaduras
 Set completo anti-parásitos con:
 - Reducción de daño biológico.
 - Resistencia a infección.
 - Bonus de set (propuesto vía tags para eventos).
+- **25 armaduras radioactivas** (`radio_armor_01..25`).
 
 ### Encantamientos personalizados (sistema por tags)
 Se implementa un sistema de “encantamientos” usando **tags, eventos y sensores de daño**:
@@ -47,8 +52,14 @@ Se implementa un sistema de “encantamientos” usando **tags, eventos y sensor
 - **Inmunidad (I–IV)**
 - **Bioblindaje (I–III)**
 - **Regeneración Sintética (I–II)**
+- **25 encantamientos radioactivos** (`book_radio_01..25`) crafteables con **1 lingote de radio + 1 libro**.
 
 > Los libros encantados son ítems dedicados (`addon:book_*`) que otorgan tags usados por los parásitos para activar eventos.
+
+### Mineral radio
+Se añade un mineral **Radio** (verde brillante y más raro que el diamante). Incluye:
+- `addon:radio_ore`
+- `addon:radio_ingot`
 
 ### Drops y loot
 - Biomasa parasitaria base.
@@ -95,6 +106,7 @@ resource_pack/textures/entity/parasite_lvl4.png
 resource_pack/textures/entity/parasite_lvl5.png
 resource_pack/textures/entity/parasite_lvl6.png
 resource_pack/textures/entity/parasite_lvl7.png
+resource_pack/textures/entity/parasite_bloom.png
 resource_pack/textures/items/antibiotic_sword.png
 resource_pack/textures/items/corrosive_bow.png
 resource_pack/textures/items/bio_spear.png
@@ -108,10 +120,87 @@ resource_pack/textures/items/book_exterminio.png
 resource_pack/textures/items/book_inmunidad_1.png
 resource_pack/textures/items/book_bioblindaje_1.png
 resource_pack/textures/items/book_regeneracion_1.png
+resource_pack/textures/items/radio_ore.png
+resource_pack/textures/items/radio_ingot.png
+resource_pack/textures/items/book_radio_01.png
+resource_pack/textures/items/book_radio_02.png
+resource_pack/textures/items/book_radio_03.png
+resource_pack/textures/items/book_radio_04.png
+resource_pack/textures/items/book_radio_05.png
+resource_pack/textures/items/book_radio_06.png
+resource_pack/textures/items/book_radio_07.png
+resource_pack/textures/items/book_radio_08.png
+resource_pack/textures/items/book_radio_09.png
+resource_pack/textures/items/book_radio_10.png
+resource_pack/textures/items/book_radio_11.png
+resource_pack/textures/items/book_radio_12.png
+resource_pack/textures/items/book_radio_13.png
+resource_pack/textures/items/book_radio_14.png
+resource_pack/textures/items/book_radio_15.png
+resource_pack/textures/items/book_radio_16.png
+resource_pack/textures/items/book_radio_17.png
+resource_pack/textures/items/book_radio_18.png
+resource_pack/textures/items/book_radio_19.png
+resource_pack/textures/items/book_radio_20.png
+resource_pack/textures/items/book_radio_21.png
+resource_pack/textures/items/book_radio_22.png
+resource_pack/textures/items/book_radio_23.png
+resource_pack/textures/items/book_radio_24.png
+resource_pack/textures/items/book_radio_25.png
+resource_pack/textures/items/radio_weapon_01.png
+resource_pack/textures/items/radio_weapon_02.png
+resource_pack/textures/items/radio_weapon_03.png
+resource_pack/textures/items/radio_weapon_04.png
+resource_pack/textures/items/radio_weapon_05.png
+resource_pack/textures/items/radio_weapon_06.png
+resource_pack/textures/items/radio_weapon_07.png
+resource_pack/textures/items/radio_weapon_08.png
+resource_pack/textures/items/radio_weapon_09.png
+resource_pack/textures/items/radio_weapon_10.png
+resource_pack/textures/items/radio_weapon_11.png
+resource_pack/textures/items/radio_weapon_12.png
+resource_pack/textures/items/radio_weapon_13.png
+resource_pack/textures/items/radio_weapon_14.png
+resource_pack/textures/items/radio_weapon_15.png
+resource_pack/textures/items/radio_weapon_16.png
+resource_pack/textures/items/radio_weapon_17.png
+resource_pack/textures/items/radio_weapon_18.png
+resource_pack/textures/items/radio_weapon_19.png
+resource_pack/textures/items/radio_weapon_20.png
+resource_pack/textures/items/radio_weapon_21.png
+resource_pack/textures/items/radio_weapon_22.png
+resource_pack/textures/items/radio_weapon_23.png
+resource_pack/textures/items/radio_weapon_24.png
+resource_pack/textures/items/radio_weapon_25.png
 resource_pack/textures/armor/parasite_helmet.png
 resource_pack/textures/armor/parasite_chestplate.png
 resource_pack/textures/armor/parasite_leggings.png
 resource_pack/textures/armor/parasite_boots.png
+resource_pack/textures/armor/radio_armor_01.png
+resource_pack/textures/armor/radio_armor_02.png
+resource_pack/textures/armor/radio_armor_03.png
+resource_pack/textures/armor/radio_armor_04.png
+resource_pack/textures/armor/radio_armor_05.png
+resource_pack/textures/armor/radio_armor_06.png
+resource_pack/textures/armor/radio_armor_07.png
+resource_pack/textures/armor/radio_armor_08.png
+resource_pack/textures/armor/radio_armor_09.png
+resource_pack/textures/armor/radio_armor_10.png
+resource_pack/textures/armor/radio_armor_11.png
+resource_pack/textures/armor/radio_armor_12.png
+resource_pack/textures/armor/radio_armor_13.png
+resource_pack/textures/armor/radio_armor_14.png
+resource_pack/textures/armor/radio_armor_15.png
+resource_pack/textures/armor/radio_armor_16.png
+resource_pack/textures/armor/radio_armor_17.png
+resource_pack/textures/armor/radio_armor_18.png
+resource_pack/textures/armor/radio_armor_19.png
+resource_pack/textures/armor/radio_armor_20.png
+resource_pack/textures/armor/radio_armor_21.png
+resource_pack/textures/armor/radio_armor_22.png
+resource_pack/textures/armor/radio_armor_23.png
+resource_pack/textures/armor/radio_armor_24.png
+resource_pack/textures/armor/radio_armor_25.png
 resource_pack/textures/models/armor/parasite_layer_1.png
 resource_pack/textures/models/armor/parasite_layer_2.png
 ```
@@ -128,7 +217,7 @@ resource_pack/sounds/parasite_evolve.ogg
    - Windows: `%LOCALAPPDATA%\Packages\Microsoft.MinecraftUWP...\LocalState\games\com.mojang\development_*_packs`
    - Android: `games/com.mojang/development_*_packs`
 2. Activa ambos packs desde el menú de **Add-Ons** en tu mundo.
-3. Genera parásitos con `/summon addon:parasite_lvl1` o deja que aparezcan de noche.
+3. Genera parásitos con `/summon addon:parasite_lvl1` o invoca la flor con `/summon addon:parasite_bloom`.
 
 ## 🧪 Ajustes recomendados
 - Ajusta valores de daño/vida en `behavior_pack/entities/parasite_lvl*.json` según tu dificultad.
