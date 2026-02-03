@@ -1,0 +1,17 @@
+{
+  "format_version": "1.20.0",
+  "sound_definitions": {
+    "addon.parasite.attack": {
+      "category": "hostile",
+      "sounds": ["sounds/parasite_attack"]
+    },
+    "addon.parasite.death": {
+      "category": "hostile",
+      "sounds": ["sounds/parasite_death"]
+    },
+    "addon.parasite.evolve": {
+      "category": "hostile",
+      "sounds": ["sounds/parasite_evolve"]
+    }
+  }
+}

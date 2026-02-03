@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "addon:parasite_boots",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:wearable": {
+        "slot": "slot.armor.feet"
+      },
+      "minecraft:armor": {
+        "protection": 3
+      },
+      "minecraft:durability": {
+        "max_durability": 225
+      },
+      "minecraft:tag": {
+        "tags": [
+          "anti_parasite_armor",
+          "inmunidad_1"
+        ]
+      },
+      "minecraft:icon": {
+        "texture": "parasite_boots"
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "addon:parasite_biomass",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 6,
+                "max": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "addon:mutagen_core",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "addon:book_purificacion_1",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "addon:book_antibiotico_1",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "addon:book_disrupcion_1",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

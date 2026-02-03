@@ -1,0 +1,22 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "addon:corrosive_bow"
+    },
+    "pattern": [
+      " BM",
+      "B S",
+      " BM"
+    ],
+    "key": {
+      "B": {"item": "addon:parasite_biomass"},
+      "M": {"item": "addon:mutagen_core"},
+      "S": {"item": "minecraft:string"}
+    },
+    "result": {
+      "item": "addon:corrosive_bow",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "resource_pack_name": "parasites_items",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "antibiotic_sword": {"textures": "textures/items/antibiotic_sword"},
+    "corrosive_bow": {"textures": "textures/items/corrosive_bow"},
+    "bio_spear": {"textures": "textures/items/bio_spear"},
+    "parasite_biomass": {"textures": "textures/items/parasite_biomass"},
+    "mutagen_core": {"textures": "textures/items/mutagen_core"},
+    "boss_relic": {"textures": "textures/items/boss_relic"},
+    "book_purificacion_1": {"textures": "textures/items/book_purificacion_1"},
+    "book_antibiotico_1": {"textures": "textures/items/book_antibiotico_1"},
+    "book_disrupcion_1": {"textures": "textures/items/book_disrupcion_1"},
+    "book_exterminio": {"textures": "textures/items/book_exterminio"},
+    "book_inmunidad_1": {"textures": "textures/items/book_inmunidad_1"},
+    "book_bioblindaje_1": {"textures": "textures/items/book_bioblindaje_1"},
+    "book_regeneracion_1": {"textures": "textures/items/book_regeneracion_1"},
+    "parasite_helmet": {"textures": "textures/armor/parasite_helmet"},
+    "parasite_chestplate": {"textures": "textures/armor/parasite_chestplate"},
+    "parasite_leggings": {"textures": "textures/armor/parasite_leggings"},
+    "parasite_boots": {"textures": "textures/armor/parasite_boots"}
+  }
+}

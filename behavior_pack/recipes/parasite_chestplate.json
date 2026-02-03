@@ -1,0 +1,20 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "addon:parasite_chestplate"
+    },
+    "pattern": [
+      "B B",
+      "BBB",
+      "BBB"
+    ],
+    "key": {
+      "B": {"item": "addon:parasite_biomass"}
+    },
+    "result": {
+      "item": "addon:parasite_chestplate",
+      "count": 1
+    }
+  }
+}
