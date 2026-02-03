@@ -1,0 +1,21 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "addon:bio_spear"
+    },
+    "pattern": [
+      " B ",
+      " S ",
+      " S "
+    ],
+    "key": {
+      "B": {"item": "addon:parasite_biomass"},
+      "S": {"item": "minecraft:stick"}
+    },
+    "result": {
+      "item": "addon:bio_spear",
+      "count": 1
+    }
+  }
+}

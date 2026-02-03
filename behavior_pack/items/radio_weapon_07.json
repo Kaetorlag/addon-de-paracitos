@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "addon:radio_weapon_07",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:hand_equipped": true,
+      "minecraft:damage": {
+        "value": 8
+      },
+      "minecraft:durability": {
+        "max_durability": 520
+      },
+      "minecraft:enchantable": {
+        "slot": "sword",
+        "value": 15
+      },
+      "minecraft:tag": {
+        "tags": [
+          "radio_weapon"
+        ]
+      },
+      "minecraft:icon": {
+        "texture": "radio_weapon_07"
+      }
+    }
+  }
+}
