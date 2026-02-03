@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "addon:bio_spear",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:hand_equipped": true,
+      "minecraft:damage": {
+        "value": 8
+      },
+      "minecraft:durability": {
+        "max_durability": 650
+      },
+      "minecraft:enchantable": {
+        "slot": "sword",
+        "value": 16
+      },
+      "minecraft:tag": {
+        "tags": [
+          "biological_pierce",
+          "purificacion_2"
+        ]
+      },
+      "minecraft:icon": {
+        "texture": "bio_spear"
+      }
+    }
+  }
+}

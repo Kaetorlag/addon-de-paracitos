@@ -1,0 +1,57 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "addon:parasite_bloom",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:health": {
+        "value": 20,
+        "max": 20
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:movement": {
+        "value": 0.0
+      },
+      "minecraft:collision_box": {
+        "width": 0.8,
+        "height": 0.9
+      },
+      "minecraft:behavior.spawn_entity": {
+        "priority": 1,
+        "spawn_entity": "addon:parasite_lvl1",
+        "spawn_event": "minecraft:entity_spawned",
+        "spawn_once": false,
+        "spawn_chance": 0.2,
+        "spawn_range": [1, 2],
+        "spawn_count": 1
+      },
+      "minecraft:timer": {
+        "time": 200,
+        "time_down_event": {
+          "event": "addon:bloom_pulse"
+        }
+      }
+    },
+    "events": {
+      "addon:bloom_pulse": {
+        "sequence": [
+          {
+            "minecraft:play_sound": {
+              "sound": "addon.parasite.evolve"
+            }
+          },
+          {
+            "minecraft:particle_effect": {
+              "effect": "addon:infection_spores",
+              "target": "self"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,286 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "addon:parasite_lvl3",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "addon:evolution_timer": {
+        "minecraft:timer": {
+          "time": 1200,
+          "time_down_event": {
+            "event": "addon:evolve"
+          }
+        }
+      },
+      "addon:transform_to_next": {
+        "minecraft:transformation": {
+          "into": "addon:parasite_lvl4",
+          "delay": 1
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "parasite",
+          "parasite_level_3"
+        ]
+      },
+      "minecraft:health": {
+        "value": 26,
+        "max": 26
+      },
+      "minecraft:attack": {
+        "damage": 4
+      },
+      "minecraft:movement": {
+        "value": 0.27
+      },
+      "minecraft:follow_range": {
+        "value": 10
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 2,
+        "track_target": true,
+        "reach_multiplier": 1.1
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 1,
+        "within_radius": 24,
+        "reselect_targets": true,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            "max_dist": 24
+          }
+        ]
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 1.0
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 8.0
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "entity_attack",
+            "on_damage": {
+              "filters": {
+                "test": "has_tag",
+                "subject": "other",
+                "value": "purificacion_1"
+              },
+              "event": "addon:purificacion_1"
+            }
+          },
+          {
+            "cause": "entity_attack",
+            "on_damage": {
+              "filters": {
+                "test": "has_tag",
+                "subject": "other",
+                "value": "purificacion_2"
+              },
+              "event": "addon:purificacion_2"
+            }
+          },
+          {
+            "cause": "entity_attack",
+            "on_damage": {
+              "filters": {
+                "test": "has_tag",
+                "subject": "other",
+                "value": "purificacion_3"
+              },
+              "event": "addon:purificacion_3"
+            }
+          },
+          {
+            "cause": "entity_attack",
+            "on_damage": {
+              "filters": {
+                "test": "has_tag",
+                "subject": "other",
+                "value": "purificacion_4"
+              },
+              "event": "addon:purificacion_4"
+            }
+          },
+          {
+            "cause": "entity_attack",
+            "on_damage": {
+              "filters": {
+                "test": "has_tag",
+                "subject": "other",
+                "value": "purificacion_5"
+              },
+              "event": "addon:purificacion_5"
+            }
+          },
+          {
+            "cause": "entity_attack",
+            "on_damage": {
+              "filters": {
+                "test": "has_tag",
+                "subject": "other",
+                "value": "antibiotico"
+              },
+              "event": "addon:antibiotico"
+            }
+          },
+          {
+            "cause": "entity_attack",
+            "on_damage": {
+              "filters": {
+                "test": "has_tag",
+                "subject": "other",
+                "value": "disrupcion"
+              },
+              "event": "addon:disrupcion"
+            }
+          }
+        ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/parasite_lvl3.json"
+      },
+      "minecraft:scale": {
+        "value": 1.08
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:behavior.ranged_attack": {
+        "priority": 3,
+        "burst_shots": 1,
+        "burst_interval": 0.0,
+        "charge_charged_trigger": 1.0
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+          "impact_damage": {
+            "damage": 5,
+            "knockback": false
+          },
+          "mob_effect": {
+            "effect": "poison",
+            "duration": 60,
+            "amplifier": 0
+          }
+        },
+        "gravity": 0.02,
+        "velocity": 1.0
+      },
+      "minecraft:behavior.break_block": {
+        "priority": 4,
+        "breakable_blocks": [
+          "minecraft:dirt",
+          "minecraft:sand",
+          "minecraft:gravel",
+          "minecraft:clay"
+        ],
+        "destroy_ticks": 20
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "event": "addon:start_evolution_timer"
+      },
+      "addon:on_kill": {
+        "event": "addon:evolve"
+      },
+      "addon:start_evolution_timer": {
+        "add": {
+          "component_groups": [
+            "addon:evolution_timer"
+          ]
+        }
+      },
+      "addon:evolve": {
+        "add": {
+          "component_groups": [
+            "addon:transform_to_next"
+          ]
+        },
+        "sequence": [
+          {
+            "minecraft:play_sound": {
+              "sound": "addon.parasite.evolve"
+            }
+          },
+          {
+            "minecraft:particle_effect": {
+              "effect": "addon:mutation_burst",
+              "target": "self"
+            }
+          }
+        ]
+      },
+      "addon:purificacion_1": {
+        "minecraft:damage": {
+          "amount": 1,
+          "cause": "magic"
+        }
+      },
+      "addon:purificacion_2": {
+        "minecraft:damage": {
+          "amount": 2,
+          "cause": "magic"
+        }
+      },
+      "addon:purificacion_3": {
+        "minecraft:damage": {
+          "amount": 3,
+          "cause": "magic"
+        }
+      },
+      "addon:purificacion_4": {
+        "minecraft:damage": {
+          "amount": 4,
+          "cause": "magic"
+        }
+      },
+      "addon:purificacion_5": {
+        "minecraft:damage": {
+          "amount": 5,
+          "cause": "magic"
+        }
+      },
+      "addon:antibiotico": {
+        "minecraft:effect": {
+          "effect": "wither",
+          "duration": 80,
+          "amplifier": 0
+        }
+      },
+      "addon:disrupcion": {
+        "remove": {
+          "component_groups": [
+            "addon:evolution_timer"
+          ]
+        }
+      },
+      "minecraft:on_kill_entity": {
+        "event": "addon:on_kill"
+      },
+      "addon:on_hurt": {
+        "minecraft:particle_effect": {
+          "effect": "addon:infection_spores",
+          "target": "self"
+        }
+      }
+    }
+  }
+}

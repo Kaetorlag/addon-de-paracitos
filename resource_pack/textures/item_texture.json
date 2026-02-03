@@ -1,0 +1,288 @@
+{
+  "resource_pack_name": "parasites_items",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "antibiotic_sword": {
+      "textures": "textures/items/antibiotic_sword"
+    },
+    "corrosive_bow": {
+      "textures": "textures/items/corrosive_bow"
+    },
+    "bio_spear": {
+      "textures": "textures/items/bio_spear"
+    },
+    "parasite_biomass": {
+      "textures": "textures/items/parasite_biomass"
+    },
+    "mutagen_core": {
+      "textures": "textures/items/mutagen_core"
+    },
+    "boss_relic": {
+      "textures": "textures/items/boss_relic"
+    },
+    "book_purificacion_1": {
+      "textures": "textures/items/book_purificacion_1"
+    },
+    "book_antibiotico_1": {
+      "textures": "textures/items/book_antibiotico_1"
+    },
+    "book_disrupcion_1": {
+      "textures": "textures/items/book_disrupcion_1"
+    },
+    "book_exterminio": {
+      "textures": "textures/items/book_exterminio"
+    },
+    "book_inmunidad_1": {
+      "textures": "textures/items/book_inmunidad_1"
+    },
+    "book_bioblindaje_1": {
+      "textures": "textures/items/book_bioblindaje_1"
+    },
+    "book_regeneracion_1": {
+      "textures": "textures/items/book_regeneracion_1"
+    },
+    "parasite_helmet": {
+      "textures": "textures/armor/parasite_helmet"
+    },
+    "parasite_chestplate": {
+      "textures": "textures/armor/parasite_chestplate"
+    },
+    "parasite_leggings": {
+      "textures": "textures/armor/parasite_leggings"
+    },
+    "parasite_boots": {
+      "textures": "textures/armor/parasite_boots"
+    },
+    "radio_ore": {
+      "textures": "textures/items/radio_ore"
+    },
+    "radio_ingot": {
+      "textures": "textures/items/radio_ingot"
+    },
+    "radio_weapon_01": {
+      "textures": "textures/items/radio_weapon_01"
+    },
+    "radio_weapon_02": {
+      "textures": "textures/items/radio_weapon_02"
+    },
+    "radio_weapon_03": {
+      "textures": "textures/items/radio_weapon_03"
+    },
+    "radio_weapon_04": {
+      "textures": "textures/items/radio_weapon_04"
+    },
+    "radio_weapon_05": {
+      "textures": "textures/items/radio_weapon_05"
+    },
+    "radio_weapon_06": {
+      "textures": "textures/items/radio_weapon_06"
+    },
+    "radio_weapon_07": {
+      "textures": "textures/items/radio_weapon_07"
+    },
+    "radio_weapon_08": {
+      "textures": "textures/items/radio_weapon_08"
+    },
+    "radio_weapon_09": {
+      "textures": "textures/items/radio_weapon_09"
+    },
+    "radio_weapon_10": {
+      "textures": "textures/items/radio_weapon_10"
+    },
+    "radio_weapon_11": {
+      "textures": "textures/items/radio_weapon_11"
+    },
+    "radio_weapon_12": {
+      "textures": "textures/items/radio_weapon_12"
+    },
+    "radio_weapon_13": {
+      "textures": "textures/items/radio_weapon_13"
+    },
+    "radio_weapon_14": {
+      "textures": "textures/items/radio_weapon_14"
+    },
+    "radio_weapon_15": {
+      "textures": "textures/items/radio_weapon_15"
+    },
+    "radio_weapon_16": {
+      "textures": "textures/items/radio_weapon_16"
+    },
+    "radio_weapon_17": {
+      "textures": "textures/items/radio_weapon_17"
+    },
+    "radio_weapon_18": {
+      "textures": "textures/items/radio_weapon_18"
+    },
+    "radio_weapon_19": {
+      "textures": "textures/items/radio_weapon_19"
+    },
+    "radio_weapon_20": {
+      "textures": "textures/items/radio_weapon_20"
+    },
+    "radio_weapon_21": {
+      "textures": "textures/items/radio_weapon_21"
+    },
+    "radio_weapon_22": {
+      "textures": "textures/items/radio_weapon_22"
+    },
+    "radio_weapon_23": {
+      "textures": "textures/items/radio_weapon_23"
+    },
+    "radio_weapon_24": {
+      "textures": "textures/items/radio_weapon_24"
+    },
+    "radio_weapon_25": {
+      "textures": "textures/items/radio_weapon_25"
+    },
+    "radio_armor_01": {
+      "textures": "textures/armor/radio_armor_01"
+    },
+    "radio_armor_02": {
+      "textures": "textures/armor/radio_armor_02"
+    },
+    "radio_armor_03": {
+      "textures": "textures/armor/radio_armor_03"
+    },
+    "radio_armor_04": {
+      "textures": "textures/armor/radio_armor_04"
+    },
+    "radio_armor_05": {
+      "textures": "textures/armor/radio_armor_05"
+    },
+    "radio_armor_06": {
+      "textures": "textures/armor/radio_armor_06"
+    },
+    "radio_armor_07": {
+      "textures": "textures/armor/radio_armor_07"
+    },
+    "radio_armor_08": {
+      "textures": "textures/armor/radio_armor_08"
+    },
+    "radio_armor_09": {
+      "textures": "textures/armor/radio_armor_09"
+    },
+    "radio_armor_10": {
+      "textures": "textures/armor/radio_armor_10"
+    },
+    "radio_armor_11": {
+      "textures": "textures/armor/radio_armor_11"
+    },
+    "radio_armor_12": {
+      "textures": "textures/armor/radio_armor_12"
+    },
+    "radio_armor_13": {
+      "textures": "textures/armor/radio_armor_13"
+    },
+    "radio_armor_14": {
+      "textures": "textures/armor/radio_armor_14"
+    },
+    "radio_armor_15": {
+      "textures": "textures/armor/radio_armor_15"
+    },
+    "radio_armor_16": {
+      "textures": "textures/armor/radio_armor_16"
+    },
+    "radio_armor_17": {
+      "textures": "textures/armor/radio_armor_17"
+    },
+    "radio_armor_18": {
+      "textures": "textures/armor/radio_armor_18"
+    },
+    "radio_armor_19": {
+      "textures": "textures/armor/radio_armor_19"
+    },
+    "radio_armor_20": {
+      "textures": "textures/armor/radio_armor_20"
+    },
+    "radio_armor_21": {
+      "textures": "textures/armor/radio_armor_21"
+    },
+    "radio_armor_22": {
+      "textures": "textures/armor/radio_armor_22"
+    },
+    "radio_armor_23": {
+      "textures": "textures/armor/radio_armor_23"
+    },
+    "radio_armor_24": {
+      "textures": "textures/armor/radio_armor_24"
+    },
+    "radio_armor_25": {
+      "textures": "textures/armor/radio_armor_25"
+    },
+    "book_radio_01": {
+      "textures": "textures/items/book_radio_01"
+    },
+    "book_radio_02": {
+      "textures": "textures/items/book_radio_02"
+    },
+    "book_radio_03": {
+      "textures": "textures/items/book_radio_03"
+    },
+    "book_radio_04": {
+      "textures": "textures/items/book_radio_04"
+    },
+    "book_radio_05": {
+      "textures": "textures/items/book_radio_05"
+    },
+    "book_radio_06": {
+      "textures": "textures/items/book_radio_06"
+    },
+    "book_radio_07": {
+      "textures": "textures/items/book_radio_07"
+    },
+    "book_radio_08": {
+      "textures": "textures/items/book_radio_08"
+    },
+    "book_radio_09": {
+      "textures": "textures/items/book_radio_09"
+    },
+    "book_radio_10": {
+      "textures": "textures/items/book_radio_10"
+    },
+    "book_radio_11": {
+      "textures": "textures/items/book_radio_11"
+    },
+    "book_radio_12": {
+      "textures": "textures/items/book_radio_12"
+    },
+    "book_radio_13": {
+      "textures": "textures/items/book_radio_13"
+    },
+    "book_radio_14": {
+      "textures": "textures/items/book_radio_14"
+    },
+    "book_radio_15": {
+      "textures": "textures/items/book_radio_15"
+    },
+    "book_radio_16": {
+      "textures": "textures/items/book_radio_16"
+    },
+    "book_radio_17": {
+      "textures": "textures/items/book_radio_17"
+    },
+    "book_radio_18": {
+      "textures": "textures/items/book_radio_18"
+    },
+    "book_radio_19": {
+      "textures": "textures/items/book_radio_19"
+    },
+    "book_radio_20": {
+      "textures": "textures/items/book_radio_20"
+    },
+    "book_radio_21": {
+      "textures": "textures/items/book_radio_21"
+    },
+    "book_radio_22": {
+      "textures": "textures/items/book_radio_22"
+    },
+    "book_radio_23": {
+      "textures": "textures/items/book_radio_23"
+    },
+    "book_radio_24": {
+      "textures": "textures/items/book_radio_24"
+    },
+    "book_radio_25": {
+      "textures": "textures/items/book_radio_25"
+    }
+  }
+}

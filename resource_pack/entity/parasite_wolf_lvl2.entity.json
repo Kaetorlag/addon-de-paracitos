@@ -1,0 +1,20 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "addon:parasite_wolf_lvl2",
+      "materials": {
+        "default": "entity"
+      },
+      "textures": {
+        "default": "textures/entity/parasite_wolf_lvl2"
+      },
+      "geometry": {
+        "default": "geometry.parasite_lvl2"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

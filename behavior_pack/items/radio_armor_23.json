@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "addon:radio_armor_23",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:wearable": {
+        "slot": "slot.armor.chest"
+      },
+      "minecraft:armor": {
+        "protection": 7
+      },
+      "minecraft:durability": {
+        "max_durability": 434
+      },
+      "minecraft:tag": {
+        "tags": [
+          "radio_armor"
+        ]
+      },
+      "minecraft:icon": {
+        "texture": "radio_armor_23"
+      }
+    }
+  }
+}

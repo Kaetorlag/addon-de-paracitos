@@ -1,0 +1,44 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "addon:corrosive_arrow",
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:projectile": {
+        "on_hit": {
+          "impact_damage": {
+            "damage": 4,
+            "knockback": true
+          },
+          "mob_effect": {
+            "effect": "poison",
+            "duration": 100,
+            "amplifier": 0
+          }
+        },
+        "gravity": 0.05,
+        "velocity": 2.5
+      },
+      "minecraft:physics": {},
+      "minecraft:collision_box": {
+        "width": 0.25,
+        "height": 0.25
+      },
+      "minecraft:timer": {
+        "time": 200,
+        "time_down_event": {
+          "event": "minecraft:despawn"
+        }
+      }
+    },
+    "events": {
+      "minecraft:despawn": {
+        "remove": {}
+      }
+    }
+  }
+}
