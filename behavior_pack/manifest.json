@@ -1,0 +1,17 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Parásitos Evolutivos (Behavior)",
+    "description": "Sistema de parásitos evolutivos con armas, armaduras y encantamientos personalizados.",
+    "uuid": "b8b6d3d9-5de9-4b7c-8cf4-9c8f5a0c2c01",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 0]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "7f5f1c19-7a7c-4d0d-8c3f-8bfe0ad8f0c8",
+      "version": [1, 0, 0]
+    }
+  ]
+}

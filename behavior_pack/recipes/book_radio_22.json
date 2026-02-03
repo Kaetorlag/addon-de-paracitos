@@ -1,0 +1,20 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "addon:book_radio_22"
+    },
+    "ingredients": [
+      {
+        "item": "addon:radio_ingot"
+      },
+      {
+        "item": "minecraft:book"
+      }
+    ],
+    "result": {
+      "item": "addon:book_radio_22",
+      "count": 1
+    }
+  }
+}

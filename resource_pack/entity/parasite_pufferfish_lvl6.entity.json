@@ -1,0 +1,20 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "addon:parasite_pufferfish_lvl6",
+      "materials": {
+        "default": "entity"
+      },
+      "textures": {
+        "default": "textures/entity/parasite_pufferfish_lvl6"
+      },
+      "geometry": {
+        "default": "geometry.parasite_lvl6"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

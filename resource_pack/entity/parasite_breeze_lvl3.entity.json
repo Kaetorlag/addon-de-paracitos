@@ -1,0 +1,20 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "addon:parasite_breeze_lvl3",
+      "materials": {
+        "default": "entity"
+      },
+      "textures": {
+        "default": "textures/entity/parasite_breeze_lvl3"
+      },
+      "geometry": {
+        "default": "geometry.parasite_lvl3"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

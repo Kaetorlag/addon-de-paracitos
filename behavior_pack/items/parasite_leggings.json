@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "addon:parasite_leggings",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:wearable": {
+        "slot": "slot.armor.legs"
+      },
+      "minecraft:armor": {
+        "protection": 6
+      },
+      "minecraft:durability": {
+        "max_durability": 375
+      },
+      "minecraft:tag": {
+        "tags": [
+          "anti_parasite_armor",
+          "bioblindaje_1"
+        ]
+      },
+      "minecraft:icon": {
+        "texture": "parasite_leggings"
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Parásitos Evolutivos (Resource)",
+    "description": "Texturas, modelos, partículas y sonidos para el sistema de parásitos.",
+    "uuid": "0f7a4b2a-3c14-4b7c-9d5b-0b3f0b6c4c52",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 0]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "c52b6f7b-0f30-4d7e-95e0-9d2b8a06f5b5",
+      "version": [1, 0, 0]
+    }
+  ]
+}

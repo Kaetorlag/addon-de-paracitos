@@ -1,0 +1,67 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "addon:parasite_donkey_lvl4",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "parasite",
+          "parasite_level_4",
+          "infected_donkey"
+        ]
+      },
+      "minecraft:health": {
+        "value": 36,
+        "max": 36
+      },
+      "minecraft:attack": {
+        "damage": 5
+      },
+      "minecraft:movement": {
+        "value": 0.28
+      },
+      "minecraft:follow_range": {
+        "value": 28
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 2,
+        "track_target": true
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 1,
+        "within_radius": 28,
+        "reselect_targets": true,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            "max_dist": 28
+          }
+        ]
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 1.0
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 8.0
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      },
+      "minecraft:scale": {
+        "value": 1.1
+      },
+      "minecraft:movement.basic": {}
+    }
+  }
+}
